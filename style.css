@@ -756,10 +756,22 @@ footer {
 }
 
 .platform-icon {
-  font-size: 44px;
   margin-bottom: 16px;
   filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
   transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+}
+
+.platform-icon svg {
+  color: var(--text-muted);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.download-platform-card:hover .platform-icon svg {
+  color: var(--accent-green);
 }
 
 .download-platform-card:hover .platform-icon {
