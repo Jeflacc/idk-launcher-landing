@@ -813,3 +813,54 @@ footer {
     padding: 0 16px;
   }
 }
+
+/* GitHub Link Styling */
+.nav-github-link {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-github-link:hover {
+  color: var(--accent-green) !important;
+}
+
+.github-icon {
+  stroke: var(--text-main);
+  transition: stroke 0.3s, transform 0.3s ease;
+}
+
+.nav-github-link:hover .github-icon {
+  stroke: var(--accent-green);
+  transform: rotate(12deg) scale(1.1);
+}
+
+.footer-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-github-link:hover {
+  color: var(--accent-green) !important;
+  transform: translateY(-1px);
+}
+
+.footer-github-link svg {
+  stroke: var(--text-muted);
+  transition: stroke 0.3s;
+}
+
+.footer-github-link:hover svg {
+  stroke: var(--accent-green);
+}
